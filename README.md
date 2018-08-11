@@ -1,6 +1,6 @@
-# GraphdataGenerator
+# FastGraph-generator
 
-This project is a data generator for Graph databases. It allows to generate Cypher queries to create a graph according to the parameters specify by the user.
+This project is a data generator for graph databases. It allows to generate Cypher queries to create a graph according to the parameters specify by the user.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
@@ -28,10 +28,6 @@ npm install
 npm start
 ```
 
-The `npm start` command builds (compiles TypeScript and copies assets) the application into `dist/`, watches for changes to the source files, and runs `lite-server` on port `3000`.
-
-Shut it down manually with `Ctrl-C`.
-
 ## Run the application
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -41,22 +37,25 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Workings of the Application
 
 - The application filesystem layout structure is based on the [angular-seed][angular-seed] project.
-- There is no dynamic backend (no application server) for this application. 
+- There is no dynamic backend (no application server) for this application.
+
+## Display the graph generated
+
+FastGraph-generator using Cypher Query, a language developed by Neo4j. To show the graph generated, it is suggest to use Neo4j.
+
 
 ## Application Directory Layout
 
 ```
-app/                        --> all the source code of the app (along with unit tests)
+app/                        --> all the source code of the app
   data-parameters-form/...  --> files for the 'form page' component (the only one page currently)
-  data_parameters_model.ts  --> class 'DataParameter' to represent all the parameters available.
   app.config.js             --> app-wide configuration of Angular services
-  app.css                   --> default stylesheet
+  app.component.css         --> default stylesheet
+  app.component.html        --> default html
+  app.component.spec.ts     -->
+  app.component.ts          --> the main app component
   app.module.js             --> the main app module
-  index.html                --> app layout file (the main HTML template file of the app)
+  data_parameters_model.ts  --> class 'DataParameter' to represent all the parameters available
 
-node_modules/...            --> development tools (fetched using `npm`)
-
-karma.conf.js               --> config file for running unit tests with Karma
-package.json                --> Node.js specific metadata, including development tools dependencies
 ```
 
