@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('graphdata-generator App', () => {
+describe('FastGraph-generator App', () => {
   let page: AppPage;
 
   beforeEach(() => {

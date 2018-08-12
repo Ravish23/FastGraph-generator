@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "graphdata-generator": {
+    "FastGraph-generator": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -48,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "graphdata-generator:build"
+            "browserTarget": "FastGraph-generator:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "graphdata-generator:build:production"
+              "browserTarget": "FastGraph-generator:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "graphdata-generator:build"
+            "browserTarget": "FastGraph-generator:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
         }
       }
     },
-    "graphdata-generator-e2e": {
+    "FastGraph-generator-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -102,7 +102,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "graphdata-generator:serve"
+            "devServerTarget": "FastGraph-generator:serve"
           }
         },
         "lint": {
@@ -119,7 +119,7 @@
       }
     }
   },
-  "defaultProject": "graphdata-generator",
+  "defaultProject": "FastGraph-generator",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
