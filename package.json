@@ -1,5 +1,5 @@
 {
-  "name": "FastGraph-generator",
+  "name": "Graph Database Generator ",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
